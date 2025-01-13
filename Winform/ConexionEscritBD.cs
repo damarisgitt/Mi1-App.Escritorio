@@ -36,11 +36,11 @@ namespace Winform
             {
                 // vamos a configurar la cadena de conexion que es un atributo de la conexion: donde digo, 
                 // a que servidor me voy a conectar. + ahora decimos a que base de datos lo voy hacer(nombre de la BD):
-                Conexion.ConnectionString = "server=FLIA-MAIDANA\\SQLEXPRESS01; database=CATALOGO_P3_DB; integrated security=true; ";
+                Conexion.ConnectionString = "server=FLIA-MAIDANA\\SQLEXPRESS01; database=CATALOGO_P3_DB; integrated security=true;";
                  // lo siguiente que hacemos es el comando que es la accion de lectura, inyectando la setencia sql que voy a utilizar
                  Comando.CommandType = System.Data.CommandType.Text;
                 //ahora le vamos a decir cual va hacer el texto: consulta sql:
-                Comando.CommandText = "select Codigo, Nombre, Descripcion, Precio from ARTICULOS";
+                Comando.CommandText = "select Codigo, Nombre, AR.Descripcion, Precio, MAR.Descripcion Marca, CAT.Descripcion Categoria, ImagenUrl from ARTICULOS AR, MARCAS MAR, CATEGORIAS CAT, IMAGENES IMAG where MAR.Id = AR.IdMarca AND CAT.Id = AR.IdCategoria AND IMAG.Id = AR.Id";
                 // y ahora decimos que este comando en la "conexion":
                 Comando.Connection = Conexion;
 
@@ -60,6 +60,13 @@ namespace Winform
                     aux.Nombre = (string)lector["Nombre"];
                     aux.Descripcion = (string)lector["Descripcion"];
                     aux.Precio = (decimal)lector["Precio"];
+                    aux.Marca = new Marcas();
+                    aux.Marca.Descripcion = (string)lector["Marca"];
+                    aux.Categoria = new Categorias();
+                    aux.Categoria.Descripcion = (string)lector["Categoria"];
+                    aux.ImagenUrl = new Imagen();
+                    aux.ImagenUrl.ImagenUrl = (string)lector["ImagenUrl"];
+
 
                     //una vez obtenido cada dato: se van a ir guardando en la lista.
                     Lista.Add(aux);

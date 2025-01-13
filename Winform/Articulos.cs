@@ -14,5 +14,10 @@ namespace Winform
         public string Nombre { get; set; }
         public string Descripcion { get; set; }
         public decimal Precio { get; set;}
+
+        //tendremos una nueva propertic de tipo Marcas que va ser Marca. La Marca es un objeto de tipo Marcas
+        public Marcas Marca { get; set; }
+        public Categorias Categoria { get; set; }
+        public Imagen ImagenUrl { get; set; }
     }
 }

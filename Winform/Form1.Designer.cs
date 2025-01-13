@@ -35,9 +35,9 @@
             // dgvCatalogo
             // 
             this.dgvCatalogo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvCatalogo.Location = new System.Drawing.Point(135, 82);
+            this.dgvCatalogo.Location = new System.Drawing.Point(23, 28);
             this.dgvCatalogo.Name = "dgvCatalogo";
-            this.dgvCatalogo.Size = new System.Drawing.Size(513, 272);
+            this.dgvCatalogo.Size = new System.Drawing.Size(755, 190);
             this.dgvCatalogo.TabIndex = 0;
             // 
             // FrmCatalogos
@@ -45,7 +45,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 304);
             this.Controls.Add(this.dgvCatalogo);
             this.Name = "FrmCatalogos";
             this.Text = "Catalogo";
