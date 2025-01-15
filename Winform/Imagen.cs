@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Winform
 {
-    class Imagen
+     class Imagen
     {
         public int id { get; set; }
         public int idArticulo { get; set; }

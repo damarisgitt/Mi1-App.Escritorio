@@ -19,5 +19,7 @@ namespace Winform
         public Marcas Marca { get; set; }
         public Categorias Categoria { get; set; }
         public Imagen ImagenUrl { get; set; }
+
+
     }
 }

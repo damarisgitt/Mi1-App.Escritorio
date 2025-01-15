@@ -9,9 +9,10 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Winform
-{
+{ 
     public partial class FrmCatalogos : Form
     {
+        private List<Articulos> listaArticulos;
         public FrmCatalogos()
         {
             InitializeComponent();
@@ -21,7 +22,18 @@ namespace Winform
         {
             //Aqui invocamos la lectura
             ConexionEscritBD Conex = new ConexionEscritBD();
-            dgvCatalogo.DataSource = Conex.listar();
+
+            listaArticulos = Conex.listar();
+
+            dgvCatalogo.DataSource = listaArticulos;
+
+            pboxArticulos.Load(listaArticulos[0].ImagenUrl.ImagenUrl);
+        }
+
+        private void dgvCatalogo_SelectionChanged(object sender, EventArgs e)
+        {
+            Articulos Seleccionado = (Articulos)dgvCatalogo.CurrentRow.DataBoundItem;
+            pboxArticulos.Load(Seleccionado.ImagenUrl.ImagenUrl);
         }
     }
 }
