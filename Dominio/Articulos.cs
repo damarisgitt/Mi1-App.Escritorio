@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Winform
+namespace Dominio
 {
     // esta la clase base que me va a dar el formato del objeto que yo voy a manipular.
-    class Articulos
+    public class Articulos
     {
         //Propiedades:
         public string Codigo { get; set; }

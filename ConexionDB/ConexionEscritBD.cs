@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 using System.Data.SqlClient;
 using Dominio;
 
-namespace ConexionDB
+namespace Winform
 {
     // Esta es la clase que me va a permirtir crear los metodos a la base de datos.
-    public class ConexionEscritBD
+    class ConexionEscritBD
     {
         // Creamos Metodos Public para que pueda ser accedida desde el exterior. ESTE METODO LO QUE HACE ES LEER 
         // LOS REGISTROS DE LA BASE DE DATOS.

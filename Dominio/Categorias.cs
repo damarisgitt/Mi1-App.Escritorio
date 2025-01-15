@@ -4,17 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Winform
+namespace Dominio
 {
-    class Marcas
+    public class Categorias
     {
-        public int id { get; set; }
+        public int Id { get; set; }
         public string Descripcion { get; set; }
 
         public override string ToString()
         {
             return Descripcion;
         }
-
     }
 }

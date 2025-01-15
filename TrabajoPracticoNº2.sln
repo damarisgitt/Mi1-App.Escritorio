@@ -1,9 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35527.113 d17.12
+VisualStudioVersion = 17.12.35527.113
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Winform", "Winform\Winform.csproj", "{5AA6A8B8-9BF0-4944-A8CD-5DF94E5088B7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dominio", "Dominio\Dominio.csproj", "{BE0BA5AB-7DCE-4E8B-B660-FF63117AF84B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConexionDB", "ConexionDB\ConexionDB.csproj", "{77BA8D8D-9B4F-46A9-A9ED-F3DC6087E72E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{5AA6A8B8-9BF0-4944-A8CD-5DF94E5088B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5AA6A8B8-9BF0-4944-A8CD-5DF94E5088B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5AA6A8B8-9BF0-4944-A8CD-5DF94E5088B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE0BA5AB-7DCE-4E8B-B660-FF63117AF84B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE0BA5AB-7DCE-4E8B-B660-FF63117AF84B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE0BA5AB-7DCE-4E8B-B660-FF63117AF84B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE0BA5AB-7DCE-4E8B-B660-FF63117AF84B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77BA8D8D-9B4F-46A9-A9ED-F3DC6087E72E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77BA8D8D-9B4F-46A9-A9ED-F3DC6087E72E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77BA8D8D-9B4F-46A9-A9ED-F3DC6087E72E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77BA8D8D-9B4F-46A9-A9ED-F3DC6087E72E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
